@@ -1,19 +1,5 @@
 {
-  "ark": {
-    "messagePrefix": "ARK message:\n",
-    "bip32": {
-      "public": 46090600,
-      "private": 46089520
-    },
-    "pubKeyHash": 23,
-    "wif": 170,
-    "client": {
-      "token":"ARK",
-      "symbol":"Ѧ",
-      "explorer":"https://explorer.ark.io"
-    }
-  },
-  "biso": {
+  "mainnet": {
     "messagePrefix": "BISO message:\n",
     "bip32": {
       "public": 46090600,
@@ -27,19 +13,6 @@
       "explorer":"https://bicaso.org"
     }
   },
-  "bitcoin": {
-    "messagePrefix": "Bitcoin message:\n",
-    "bip32": {
-      "public": 46090600,
-      "private": 46089520
-    },
-    "pubKeyHash": 1,
-    "wif": 1,
-    "client": {
-      "token":"Bitcoin",
-      "symbol":"B"
-    }
-  },
   "testnet": {
     "messagePrefix": "TESTNET message:\n",
     "bip32": {
@@ -49,8 +22,8 @@
     "pubKeyHash": 82,
     "wif": 186,
     "client": {
-      "token":"TARK",
-      "symbol":"TѦ",
+      "token":"TBISO",
+      "symbol":"BѦ",
       "explorer":"http://texplorer.ark.io"
     }
   },
@@ -63,7 +36,7 @@
     "pubKeyHash": 30,
     "wif": 187,
     "client": {
-      "token":"DARK",
+      "token":"DBISO",
       "symbol":"DѦ",
       "explorer":"http://dexplorer.ark.io"
     }

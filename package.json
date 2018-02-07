@@ -13,7 +13,7 @@
     "cov": "./node_modules/.bin/mocha --require blanket -R html-cov test/helpers test/logic > tmp/coverage.html",
     "task:block": "node tasks/createGenesisBlock.js",
     "task:account": "node tasks/createAccount.js",
-    "biso:mainnet": "node app.js --genesis ./biso/genesisBlock.biso.json --config config.biso.json -i"
+    "biso:mainnet": "node app.js --genesis ./biso/genesisBlock.mainnet.json --config ./biso/config.mainnet.json -i"
   },
   "author": "Boris Povod <boris@crypti.me>, Pavel Nekrasov <landgraf.paul@gmail.com>, Oliver Beddows <oliver@lisk.io>, FX Thoorens <fx.thoorens@ark.io>",
   "dependencies": {

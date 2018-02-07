@@ -10,7 +10,7 @@ var Crypto = require('../helpers/crypto.js');
 var networks = require('../networks.json');
 
 // network name that SHOULD already be preconfigured in ../networks.json
-var network_name = "biso";
+var network_name = "mainnet";
 if(!networks[network_name]){
   console.log("WARNING: no configuration found in networks.json for '"+network_name+"'. Defaulting to 'devnet'");
   network_name = "devnet";
@@ -49,7 +49,7 @@ var seed_peers = [
 ];
 
 // default db named
-var db_name = "db_" + network_name;
+var db_name = "biso_" + network_name;
 
 // optional premined accounts. Example :
 // [

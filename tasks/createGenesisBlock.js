@@ -26,7 +26,7 @@ var output_dir = './biso';
 var default_port = 4100;
 
 // version of network to set in the config file
-var config_version = '0.0.1';
+var config_version = '0.1.0';
 
 // ips of your nodes in your network
 var seed_peers = [
@@ -139,8 +139,8 @@ var config = {
         options: {
             port: 443,
             address: "0.0.0.0",
-            key: "./ssl/ark.key",
-            cert: "./ssl/ark.crt"
+            key: "./ssl/biso.key",
+            cert: "./ssl/biso.crt"
         }
     },
     network: network_name

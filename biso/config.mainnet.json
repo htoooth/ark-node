@@ -1,7 +1,7 @@
 {
   "port": 4100,
   "address": "0.0.0.0",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "fileLogLevel": "info",
   "logFileName": "logs/biso.log",
   "consoleLogLevel": "debug",
@@ -9,7 +9,7 @@
   "db": {
     "host": "localhost",
     "port": 5432,
-    "database": "db_biso",
+    "database": "biso_mainnet",
     "user": "postgres",
     "password": "postgres",
     "poolSize": 20,
@@ -72,21 +72,7 @@
   "forging": {
     "coldstart": 6,
     "force": true,
-    "secret": {
-      "secret": [
-        "pudding dice rate creek beach swift win talent company orient else sock",
-        "short forest switch offer grace cattle gravity repair tree ride window satoshi",
-        "drop enemy mirror wheat hour pyramid garment brave suffer document wealth force",
-        "logic bid shrug benefit struggle worry engine kind oxygen inmate fancy card",
-        "elite destroy all flee frost pet athlete sauce renew mansion come bench",
-        "gate chair neck announce hair baby carbon hint hammer enjoy ski coral",
-        "nut chief silk torch guitar uncover elder quantum abuse monster wave lady",
-        "buffalo fetch industry inside muffin pupil salmon random loop tail helmet mom",
-        "claim project elder foster nuclear bachelor right stable fatal hello erupt clog",
-        "robust common decrease boy advance reject kind tribe leaf apple nut online",
-        "sense until lab rate elegant maze poet wait quote hobby loyal deliver"
-      ]
-    },
+    "secret": [],
     "access": {
       "whiteList": [
         "127.0.0.1"
@@ -102,10 +88,10 @@
     "options": {
       "port": 443,
       "address": "0.0.0.0",
-      "key": "./ssl/ark.key",
-      "cert": "./ssl/ark.crt"
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
     }
   },
-  "network": "biso",
-  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+  "network": "mainnet",
+  "nethash": "07120190d2e6d1ce2f4beb0f04a59597c880fbe373ffb1e9829b7cdda27270bb"
 }

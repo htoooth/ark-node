@@ -1,7 +1,7 @@
 {
   "port": 4100,
   "address": "0.0.0.0",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "fileLogLevel": "info",
   "logFileName": "logs/biso.log",
   "consoleLogLevel": "debug",
@@ -9,7 +9,7 @@
   "db": {
     "host": "localhost",
     "port": 5432,
-    "database": "db_biso",
+    "database": "biso_mainnet",
     "user": "postgres",
     "password": "postgres",
     "poolSize": 20,
@@ -74,16 +74,17 @@
     "force": true,
     "secret": {
       "secret": [
-        "couch inmate smoke spell about thought alcohol photo bargain purity used lift",
-        "cabin found confirm strike hidden pepper decline armed clown ill kick slender",
-        "insane addict old monitor apology switch captain invest actress flock scan secret",
-        "exhibit swarm few snake shaft govern eternal betray point cotton engage predict",
-        "rifle income theme yard forward call key weasel slot utility twelve veteran",
-        "under riot two drip exercise jump secret proof vivid gossip drop diet",
-        "whisper lazy multiply robot swallow slight foam runway couch salt napkin spin",
-        "mechanic essence isolate night rubber subway spot detect tent strike tower turkey",
-        "legal flower tired fitness moment design doll crazy trust tonight sunset atom",
-        "case obvious vivid link orphan staff indicate crunch tone chef coconut script"
+        "gym dizzy hair venue address tired cigar now blanket busy width carbon",
+        "noble lamp hockey spirit valve panther city before tornado member impose jungle",
+        "combine merry bind essay cabin squeeze april carbon reunion genius sausage always",
+        "ignore speed two gallery hurt witness junior network crush dose math relief",
+        "wine capable hole lift fox scheme snack shy people depart olive nuclear",
+        "celery step detail slab fitness eight private trade erode table beef tilt",
+        "gas museum relief shy slam eight carpet exhibit brave tattoo horror shoulder",
+        "violin arrange square beauty virtual kiss inner else jealous unlock jungle wrestle",
+        "say spray aim style plug squeeze boost angle south project document main",
+        "upon wild mom wrist when deputy film flavor bomb elite insane swear",
+        "exact famous tobacco glimpse arrive tower rack rabbit assault feel degree cushion"
       ]
     },
     "access": {
@@ -101,10 +102,10 @@
     "options": {
       "port": 443,
       "address": "0.0.0.0",
-      "key": "./ssl/ark.key",
-      "cert": "./ssl/ark.crt"
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
     }
   },
-  "network": "biso",
-  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+  "network": "mainnet",
+  "nethash": "07120190d2e6d1ce2f4beb0f04a59597c880fbe373ffb1e9829b7cdda27270bb"
 }

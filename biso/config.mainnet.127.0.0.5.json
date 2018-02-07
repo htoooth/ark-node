@@ -1,7 +1,7 @@
 {
   "port": 4100,
   "address": "0.0.0.0",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "fileLogLevel": "info",
   "logFileName": "logs/biso.log",
   "consoleLogLevel": "debug",
@@ -9,7 +9,7 @@
   "db": {
     "host": "localhost",
     "port": 5432,
-    "database": "db_biso",
+    "database": "biso_mainnet",
     "user": "postgres",
     "password": "postgres",
     "poolSize": 20,
@@ -72,7 +72,20 @@
   "forging": {
     "coldstart": 6,
     "force": true,
-    "secret": [],
+    "secret": {
+      "secret": [
+        "skirt orchard payment accident witness bone ritual learn dice develop orbit patient",
+        "zero ride craft october father clay moral author bulb annual copy spice",
+        "term gauge daring offer solid tongue hurry coral nuclear jacket car child",
+        "patrol author plate crunch thrive artist obvious lecture caution forum eye travel",
+        "finish fault sure picnic stomach fine stick sketch endorse mirror unusual glare",
+        "life one bean spin manual route shock chuckle member supreme guitar volume",
+        "load chef together uncle slogan humor short rail glass rally cotton fruit",
+        "mechanic spin scene own beach extra curious day into card wolf spin",
+        "coin since rule isolate lounge genius twice domain faint soon theme someone",
+        "apart motion tip invest special indicate quiz question flash when sadness gloom"
+      ]
+    },
     "access": {
       "whiteList": [
         "127.0.0.1"
@@ -88,10 +101,10 @@
     "options": {
       "port": 443,
       "address": "0.0.0.0",
-      "key": "./ssl/ark.key",
-      "cert": "./ssl/ark.crt"
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
     }
   },
-  "network": "biso",
-  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+  "network": "mainnet",
+  "nethash": "07120190d2e6d1ce2f4beb0f04a59597c880fbe373ffb1e9829b7cdda27270bb"
 }

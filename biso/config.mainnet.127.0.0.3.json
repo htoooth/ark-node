@@ -1,7 +1,7 @@
 {
   "port": 4100,
   "address": "0.0.0.0",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "fileLogLevel": "info",
   "logFileName": "logs/biso.log",
   "consoleLogLevel": "debug",
@@ -9,7 +9,7 @@
   "db": {
     "host": "localhost",
     "port": 5432,
-    "database": "db_biso",
+    "database": "biso_mainnet",
     "user": "postgres",
     "password": "postgres",
     "poolSize": 20,
@@ -74,16 +74,16 @@
     "force": true,
     "secret": {
       "secret": [
-        "dream across one swarm torch slogan dynamic tooth kind city sentence camera",
-        "away minute bright sad rural jar survey decline wear salad fade grain",
-        "border wealth own chest wool lady grocery seven exercise enter voice float",
-        "fury retire distance worth ordinary slight improve predict state oven draft true",
-        "position sight transfer rebel adapt swim drop unhappy test local swap drive",
-        "advance furnace attract remember penalty crunch dragon humor sign rich road neither",
-        "task orange since shiver month fiscal indicate shiver hotel legal coach secret",
-        "usage arrive ranch spell caution kiss bag marriage nuclear organ very throw",
-        "swift deputy tent extra object resource mouse owner climb tuition bless skin",
-        "squirrel enhance hire soon shoot much essay train myself sign gloom together"
+        "picture timber humor atom cover hedgehog prize wreck noise segment steel confirm",
+        "good zone leopard lucky soda film weather retreat wine give plate orange",
+        "lucky funny keep sock clever vital pepper club fuel total pistol economy",
+        "error rather shrug fetch slogan utility odor change order swap dismiss cook",
+        "worth shrug crunch vintage story drink obey frame soldier amount tilt lift",
+        "choice thought inner old else quality frequent boring clap entry cushion coffee",
+        "bachelor nephew reason alien this walk letter style bottom express goose divert",
+        "material nurse swear club lunch clown trip resemble snake easy truth universe",
+        "roof find hole snake steak glory brave fame kingdom health fix hawk",
+        "gate cactus angle curious skin heavy spot animal sport blood return practice"
       ]
     },
     "access": {
@@ -101,10 +101,10 @@
     "options": {
       "port": 443,
       "address": "0.0.0.0",
-      "key": "./ssl/ark.key",
-      "cert": "./ssl/ark.crt"
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
     }
   },
-  "network": "biso",
-  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+  "network": "mainnet",
+  "nethash": "07120190d2e6d1ce2f4beb0f04a59597c880fbe373ffb1e9829b7cdda27270bb"
 }

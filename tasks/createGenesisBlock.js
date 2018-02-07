@@ -10,17 +10,17 @@ var Crypto = require('../helpers/crypto.js');
 var networks = require('../networks.json');
 
 // network name that SHOULD already be preconfigured in ../networks.json
-var network_name = "bitcoin";
+var network_name = "biso";
 if(!networks[network_name]){
   console.log("WARNING: no configuration found in networks.json for '"+network_name+"'. Defaulting to 'devnet'");
   network_name = "devnet";
 }
 
 // directory to export passphrases of premine account and genesis delegates. Should exist
-var private_dir = './demo';
+var private_dir = './biso';
 
 // directory to export config and genesisBlock files. Should exist
-var output_dir = './demo';
+var output_dir = './biso';
 
 // default port for node
 var default_port = 4100;
@@ -49,7 +49,7 @@ var seed_peers = [
 ];
 
 // default db named
-var db_name = "ark_" + network_name;
+var db_name = "biso_" + network_name;
 
 // optional premined accounts. Example :
 // [
@@ -75,15 +75,15 @@ var config = {
     address: "0.0.0.0",
     version: config_version,
     fileLogLevel: "info",
-    logFileName: "logs/ark.log",
+    logFileName: "logs/biso.log",
     consoleLogLevel: "debug",
     trustProxy: false,
     db: {
         host: "localhost",
         port: 5432,
         database: db_name,
-        user: null,
-        password: "password",
+        user: "postgres",
+        password: "postgres",
         poolSize: 20,
         poolIdleTimeout: 30000,
         reapIntervalMillis: 1000,

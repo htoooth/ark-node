@@ -15,4 +15,3 @@ tmp
 config.main.json
 genesisBlock.main.json
 .vagrant
-private/

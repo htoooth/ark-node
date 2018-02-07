@@ -1,0 +1,110 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.0.1",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "db_biso",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "127.0.0.1",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.2",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.3",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.4",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.5",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": {
+      "secret": [
+        "confirm window prevent bullet office mention little gift element relax damage limb",
+        "crime snake battle tobacco napkin more fame rival super defense job copy",
+        "crouch satoshi dinosaur table upset laugh brave note discover kite quick uniform",
+        "equal morning topple congress material host february chase canoe effort fiction much",
+        "sort stay step frame audit orient dish argue village assist thought moment",
+        "skill burger viable lady resemble entire rapid weather impose clog fever purse",
+        "sustain vibrant puzzle adjust sense hotel act assist odor festival clog mom",
+        "spoon tube copy knee differ market enjoy snow helmet permit give half",
+        "february focus opera warm arch thrive ride exile margin estate theory pulse",
+        "execute speed wing entire armor devote whip front whisper luxury label insane"
+      ]
+    },
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/ark.key",
+      "cert": "./ssl/ark.crt"
+    }
+  },
+  "network": "biso",
+  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+}

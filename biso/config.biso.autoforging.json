@@ -1,0 +1,149 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.0.1",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "db_biso",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "127.0.0.1",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.2",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.3",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.4",
+        "port": 4100
+      },
+      {
+        "ip": "127.0.0.5",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": [
+      "pudding dice rate creek beach swift win talent company orient else sock",
+      "confirm window prevent bullet office mention little gift element relax damage limb",
+      "dream across one swarm torch slogan dynamic tooth kind city sentence camera",
+      "couch inmate smoke spell about thought alcohol photo bargain purity used lift",
+      "panda culture mad upgrade charge cinnamon trip idea door parrot chimney lens",
+      "short forest switch offer grace cattle gravity repair tree ride window satoshi",
+      "crime snake battle tobacco napkin more fame rival super defense job copy",
+      "away minute bright sad rural jar survey decline wear salad fade grain",
+      "cabin found confirm strike hidden pepper decline armed clown ill kick slender",
+      "letter logic also fresh found legal risk century scale cup initial over",
+      "drop enemy mirror wheat hour pyramid garment brave suffer document wealth force",
+      "crouch satoshi dinosaur table upset laugh brave note discover kite quick uniform",
+      "border wealth own chest wool lady grocery seven exercise enter voice float",
+      "insane addict old monitor apology switch captain invest actress flock scan secret",
+      "armed merge ivory rent twelve devote bundle zone talk soda ginger desert",
+      "logic bid shrug benefit struggle worry engine kind oxygen inmate fancy card",
+      "equal morning topple congress material host february chase canoe effort fiction much",
+      "fury retire distance worth ordinary slight improve predict state oven draft true",
+      "exhibit swarm few snake shaft govern eternal betray point cotton engage predict",
+      "fault expose filter early mutual chronic insane pink note wing water future",
+      "elite destroy all flee frost pet athlete sauce renew mansion come bench",
+      "sort stay step frame audit orient dish argue village assist thought moment",
+      "position sight transfer rebel adapt swim drop unhappy test local swap drive",
+      "rifle income theme yard forward call key weasel slot utility twelve veteran",
+      "area candy another wine drift novel kit draft collect dizzy artist bounce",
+      "gate chair neck announce hair baby carbon hint hammer enjoy ski coral",
+      "skill burger viable lady resemble entire rapid weather impose clog fever purse",
+      "advance furnace attract remember penalty crunch dragon humor sign rich road neither",
+      "under riot two drip exercise jump secret proof vivid gossip drop diet",
+      "become sustain despair update balance school arrest weapon obvious opera fiber define",
+      "nut chief silk torch guitar uncover elder quantum abuse monster wave lady",
+      "sustain vibrant puzzle adjust sense hotel act assist odor festival clog mom",
+      "task orange since shiver month fiscal indicate shiver hotel legal coach secret",
+      "whisper lazy multiply robot swallow slight foam runway couch salt napkin spin",
+      "online age stumble fiscal poet south audit usual noodle ball indicate scorpion",
+      "buffalo fetch industry inside muffin pupil salmon random loop tail helmet mom",
+      "spoon tube copy knee differ market enjoy snow helmet permit give half",
+      "usage arrive ranch spell caution kiss bag marriage nuclear organ very throw",
+      "mechanic essence isolate night rubber subway spot detect tent strike tower turkey",
+      "plunge vivid sorry index improve robust rough afraid eye ten quote ecology",
+      "claim project elder foster nuclear bachelor right stable fatal hello erupt clog",
+      "february focus opera warm arch thrive ride exile margin estate theory pulse",
+      "swift deputy tent extra object resource mouse owner climb tuition bless skin",
+      "legal flower tired fitness moment design doll crazy trust tonight sunset atom",
+      "undo seven idea dad swear force account bid witness accident drift pilot",
+      "robust common decrease boy advance reject kind tribe leaf apple nut online",
+      "execute speed wing entire armor devote whip front whisper luxury label insane",
+      "squirrel enhance hire soon shoot much essay train myself sign gloom together",
+      "case obvious vivid link orphan staff indicate crunch tone chef coconut script",
+      "dawn ordinary trick fuel sell couple man slow divorce broken demise order",
+      "sense until lab rate elegant maze poet wait quote hobby loyal deliver"
+    ],
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/ark.key",
+      "cert": "./ssl/ark.crt"
+    }
+  },
+  "network": "biso",
+  "nethash": "f35694b3d49ef87fb31c85979431a7bce93214e542a1cd7c0bdf358f5164e363"
+}

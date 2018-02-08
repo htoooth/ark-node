@@ -103,7 +103,7 @@ if(appConfig.network){
 }
 
 else {
-	appConfig.network = networks.ark;
+	appConfig.network = networks.mainnet;
 }
 
 if(appConfig.modules){

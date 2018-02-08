@@ -1,0 +1,113 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.1.0",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "biso_mainnet",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "47.91.218.198",
+        "port": 4100
+      },
+      {
+        "ip": "116.85.49.217",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": {
+      "secret": [
+        "abstract opinion cement wrap insect sunset scan express cat cute dynamic image",
+        "rain expand surround rely cousin silk surface topple artist frost home usual",
+        "thunder joke quantum junk clap raise stamp few alcohol wild taste move",
+        "pause want debris digital despair order aunt toy trap during potato burger",
+        "chief rally multiply keen hard indoor zone quit over expand shield wage",
+        "seek have learn audit olympic almost shadow category pair defy sand invest",
+        "sadness damage radio fog repeat garage eager argue stock one sport clump",
+        "steak merit birth coral tongue sudden hope resemble rival end dynamic people",
+        "car canal sweet property real result help coyote swallow sound smile place",
+        "install alien phrase oven divorce slender struggle early brother dove busy noble",
+        "suffer eager regret soup radar song tube story magic toe elevator yellow",
+        "monitor inspire joy snow drill bunker april during truck endorse olive crime",
+        "unlock joy release fury dune cross play radar salad wall silk pelican",
+        "admit family buzz differ student zone chalk twice pig dragon human lock",
+        "family final page catch squeeze clever entry pool physical marine help champion",
+        "universe entry measure reject disease sunny soap orient follow sample series chef",
+        "eyebrow pause chest correct box patrol skin bright prepare subway thrive orange",
+        "market hazard gesture couple whale lock retire double view upset decorate clog",
+        "accuse merge universe rhythm tumble naive can frozen box evolve choose moment",
+        "promote dose page wrist outside picnic twist version slot custom mammal scale",
+        "lamp sunset tribe force romance athlete goddess renew flag runway valley credit",
+        "erosion vast olympic biology wage member fault depart report problem garbage improve",
+        "caught beyond page coffee veteran knee rare mechanic desert gather remind cram",
+        "whisper law mosquito lecture length soft wedding tunnel place general coffee present",
+        "news mushroom roof sponsor rain basic stay ship able orchard mansion push"
+      ]
+    },
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
+    }
+  },
+  "network": "mainnet",
+  "nethash": "8f02d9eca3eb0800dad65c0435eb05ae25ae1c5f8ba56677b6261254b71d9744"
+}

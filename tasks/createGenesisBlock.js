@@ -31,6 +31,9 @@ var config_version = '0.1.0';
 // ips of your nodes in your network
 var seed_peers = [
       {
+        ip: "47.91.218.198",
+        port: 4100
+      },{
         ip: "116.85.49.217",
         port: 4100
       }

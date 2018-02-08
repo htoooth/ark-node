@@ -1,0 +1,114 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.1.0",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "biso_mainnet",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "47.91.218.198",
+        "port": 4100
+      },
+      {
+        "ip": "116.85.49.217",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": {
+      "secret": [
+        "grow donkey logic about course discover nasty paper final usual super pony",
+        "notable six off pudding punch winter lens require try rely property drink",
+        "fame salute across volcano tattoo flat tomorrow deputy caution deliver maple country",
+        "travel valid comfort material upper area final exact drastic glory wear capable",
+        "witness smoke pattern retire puppy asthma intact spawn cannon differ dragon all",
+        "knock spend because mesh transfer woman barely edge ship butter camera sure",
+        "width mixture nice differ ensure they depend float hockey rabbit age grid",
+        "vacant become float brave oval beyond mask pottery tortoise skate empower assume",
+        "puppy fault select twist company warm beef festival indicate text autumn summer",
+        "spirit canvas person rare during chuckle popular pelican lobster belt knock welcome",
+        "two sheriff little dad produce voice tumble toe sleep daughter mango flip",
+        "popular you combine inspire wine ski angle castle prison victory sing destroy",
+        "host mask board tree suit size gravity alpha nation strategy notable turtle",
+        "peanut empty hundred pipe body weather naive wire buddy fresh mule monitor",
+        "impact cotton surface brush cactus donate audit settle orphan imitate memory speak",
+        "feature fuel toward address quantum dwarf infant exile embrace real spell vicious",
+        "lend attack time route over caution guitar buffalo animal purpose flee top",
+        "shadow artwork blade message holiday relief excess crouch tennis sort release casino",
+        "aspect buffalo gain illegal pledge fever pond try manual inside install kingdom",
+        "armor true business birth category medal theory average vapor hungry disagree scene",
+        "hybrid senior two seven purity kingdom plate junior split tenant paper assist",
+        "cost oil antenna moment advice swing solution quarter father marriage decorate kitchen",
+        "loop arrive spend banner inner bid recall thunder bundle business three evolve",
+        "tag quit antenna another next peanut social sunset panel curtain among cry",
+        "prison about layer iron ahead sun kite hurt genius unfair buffalo ladder",
+        "gaze six feel elephant vocal hundred lamp outdoor decade runway frame north"
+      ]
+    },
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
+    }
+  },
+  "network": "mainnet",
+  "nethash": "b680d27b73171e546e3433dd2c3505383f6b0b771ee038ac34e33c04b6d999d5"
+}

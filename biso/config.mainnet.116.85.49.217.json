@@ -1,0 +1,113 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.1.0",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "biso_mainnet",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "47.91.218.198",
+        "port": 4100
+      },
+      {
+        "ip": "116.85.49.217",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": {
+      "secret": [
+        "follow arrive winner wool immune despair dose vapor anchor image window decrease",
+        "pet say property turn patrol vacuum ranch myself produce april blossom valid",
+        "upgrade duck august mushroom today forget boss power alcohol electric joke mixture",
+        "invite pride have crane sausage gallery piece eye core speak regret deny",
+        "useful digital clutch hundred access worth glad mango begin foster true symbol",
+        "slight open motion crush obtain mercy tackle place output toward pistol spoil",
+        "fan coach gloom parent shrimp rhythm interest jazz among seven actual direct",
+        "eight immense cool worth promote police bronze top document chief truth teach",
+        "crazy swallow despair quit hold infant hobby choose vintage trash cushion easily",
+        "obvious verb connect almost rather survey scout drill vehicle hawk emotion animal",
+        "peace stumble update over call spy until vault drive recycle celery never",
+        "insect sock grant odor awake naive account crunch allow talent grab repair",
+        "ancient guilt stomach digital category search blanket spend acid monkey service pulp",
+        "hair stick festival lawn shock bunker inform defy tail cherry lock found",
+        "drip what dinosaur float grace mesh there cloud black pulse blood burst",
+        "setup morning sniff oil mom label number leisure onion grab risk display",
+        "order interest ten have ball board slim minimum rice reopen emerge rapid",
+        "lunch ankle lounge beyond unable abandon antenna vanish grocery advance token pledge",
+        "choice wood approve van answer art galaxy expect adjust pledge fiscal call",
+        "mention mutual beach track course help kind borrow social comfort flag shock",
+        "swallow humor screen lamp spell clarify trouble velvet betray tide tell lake",
+        "abuse control salon crew cabin dilemma reform clever elder stone minimum news",
+        "figure picture raven tide price surround awkward carry wreck leave gas express",
+        "volume rather humor express version lumber aspect solar diamond trim tuition chuckle",
+        "pond uniform blame fashion general someone climb helmet coach tip cricket walk"
+      ]
+    },
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
+    }
+  },
+  "network": "mainnet",
+  "nethash": "b680d27b73171e546e3433dd2c3505383f6b0b771ee038ac34e33c04b6d999d5"
+}

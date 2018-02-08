@@ -1,0 +1,137 @@
+{
+  "port": 4100,
+  "address": "0.0.0.0",
+  "version": "0.1.0",
+  "fileLogLevel": "info",
+  "logFileName": "logs/biso.log",
+  "consoleLogLevel": "debug",
+  "trustProxy": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "biso_mainnet",
+    "user": "postgres",
+    "password": "postgres",
+    "poolSize": 20,
+    "poolIdleTimeout": 30000,
+    "reapIntervalMillis": 1000,
+    "logEvents": [
+      "error"
+    ]
+  },
+  "api": {
+    "mount": true,
+    "access": {
+      "whiteList": []
+    },
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      }
+    }
+  },
+  "peers": {
+    "minimumNetworkReach": 1,
+    "list": [
+      {
+        "ip": "47.91.218.198",
+        "port": 4100
+      },
+      {
+        "ip": "116.85.49.217",
+        "port": 4100
+      }
+    ],
+    "blackList": [],
+    "options": {
+      "limits": {
+        "max": 0,
+        "delayMs": 0,
+        "delayAfter": 0,
+        "windowMs": 60000
+      },
+      "maxUpdatePeers": 20,
+      "timeout": 5000
+    }
+  },
+  "forging": {
+    "coldstart": 6,
+    "force": true,
+    "secret": [
+      "grow donkey logic about course discover nasty paper final usual super pony",
+      "follow arrive winner wool immune despair dose vapor anchor image window decrease",
+      "notable six off pudding punch winter lens require try rely property drink",
+      "pet say property turn patrol vacuum ranch myself produce april blossom valid",
+      "fame salute across volcano tattoo flat tomorrow deputy caution deliver maple country",
+      "upgrade duck august mushroom today forget boss power alcohol electric joke mixture",
+      "travel valid comfort material upper area final exact drastic glory wear capable",
+      "invite pride have crane sausage gallery piece eye core speak regret deny",
+      "witness smoke pattern retire puppy asthma intact spawn cannon differ dragon all",
+      "useful digital clutch hundred access worth glad mango begin foster true symbol",
+      "knock spend because mesh transfer woman barely edge ship butter camera sure",
+      "slight open motion crush obtain mercy tackle place output toward pistol spoil",
+      "width mixture nice differ ensure they depend float hockey rabbit age grid",
+      "fan coach gloom parent shrimp rhythm interest jazz among seven actual direct",
+      "vacant become float brave oval beyond mask pottery tortoise skate empower assume",
+      "eight immense cool worth promote police bronze top document chief truth teach",
+      "puppy fault select twist company warm beef festival indicate text autumn summer",
+      "crazy swallow despair quit hold infant hobby choose vintage trash cushion easily",
+      "spirit canvas person rare during chuckle popular pelican lobster belt knock welcome",
+      "obvious verb connect almost rather survey scout drill vehicle hawk emotion animal",
+      "two sheriff little dad produce voice tumble toe sleep daughter mango flip",
+      "peace stumble update over call spy until vault drive recycle celery never",
+      "popular you combine inspire wine ski angle castle prison victory sing destroy",
+      "insect sock grant odor awake naive account crunch allow talent grab repair",
+      "host mask board tree suit size gravity alpha nation strategy notable turtle",
+      "ancient guilt stomach digital category search blanket spend acid monkey service pulp",
+      "peanut empty hundred pipe body weather naive wire buddy fresh mule monitor",
+      "hair stick festival lawn shock bunker inform defy tail cherry lock found",
+      "impact cotton surface brush cactus donate audit settle orphan imitate memory speak",
+      "drip what dinosaur float grace mesh there cloud black pulse blood burst",
+      "feature fuel toward address quantum dwarf infant exile embrace real spell vicious",
+      "setup morning sniff oil mom label number leisure onion grab risk display",
+      "lend attack time route over caution guitar buffalo animal purpose flee top",
+      "order interest ten have ball board slim minimum rice reopen emerge rapid",
+      "shadow artwork blade message holiday relief excess crouch tennis sort release casino",
+      "lunch ankle lounge beyond unable abandon antenna vanish grocery advance token pledge",
+      "aspect buffalo gain illegal pledge fever pond try manual inside install kingdom",
+      "choice wood approve van answer art galaxy expect adjust pledge fiscal call",
+      "armor true business birth category medal theory average vapor hungry disagree scene",
+      "mention mutual beach track course help kind borrow social comfort flag shock",
+      "hybrid senior two seven purity kingdom plate junior split tenant paper assist",
+      "swallow humor screen lamp spell clarify trouble velvet betray tide tell lake",
+      "cost oil antenna moment advice swing solution quarter father marriage decorate kitchen",
+      "abuse control salon crew cabin dilemma reform clever elder stone minimum news",
+      "loop arrive spend banner inner bid recall thunder bundle business three evolve",
+      "figure picture raven tide price surround awkward carry wreck leave gas express",
+      "tag quit antenna another next peanut social sunset panel curtain among cry",
+      "volume rather humor express version lumber aspect solar diamond trim tuition chuckle",
+      "prison about layer iron ahead sun kite hurt genius unfair buffalo ladder",
+      "pond uniform blame fashion general someone climb helmet coach tip cricket walk",
+      "gaze six feel elephant vocal hundred lamp outdoor decade runway frame north"
+    ],
+    "access": {
+      "whiteList": [
+        "127.0.0.1"
+      ]
+    }
+  },
+  "loading": {
+    "verifyOnLoading": false,
+    "loadPerIteration": 5000
+  },
+  "ssl": {
+    "enabled": false,
+    "options": {
+      "port": 443,
+      "address": "0.0.0.0",
+      "key": "./ssl/biso.key",
+      "cert": "./ssl/biso.crt"
+    }
+  },
+  "network": "mainnet",
+  "nethash": "b680d27b73171e546e3433dd2c3505383f6b0b771ee038ac34e33c04b6d999d5"
+}
